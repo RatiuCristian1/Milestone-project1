@@ -1,0 +1,62 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    border: 1px solid yellow;
+    display: flexbox;
+  }
+
+
+
+header {
+    border: 1px solid blue;
+    display: flexbox;
+    text-align: center;
+
+}  
+main {
+    border: 1px solid red;
+}
+
+footer {
+    border: 1px solid green;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+
+}
+/* Navigation bar */
+nav {
+    display: flexbox;
+}
+
+nav img {
+    height: 300px;
+    border: 1px solid yellow;
+    max-width: 300px;
+     
+}
+
+nav ul {
+    border: 1px solid red;
+}
+/* Main Content */
+.content-wrapper{
+    border: 1px solid red;
+}
+
+.description {
+    border: 1px solid red;
+}
+
