@@ -7,6 +7,7 @@
 }
 
 body {
+  min-height: 100px;
   font-family: Lato;
   color: #777777;
 }
@@ -15,7 +16,7 @@ h2{
   font-family: Oswald;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: green;
+  color: rgb(4, 168, 4);
 }
 
 #logo {
@@ -55,7 +56,7 @@ h2{
 #hero-image {
   height: 750px;
   width: 100%;
-  background: url("https://urlaub-in-rumänien.de/wp-content/uploads/2018/02/Satu-Mare2-1.jpg") no-repeat center center;
+  background: url("assets/images/Satu-Mare2-1.jpg")
   background-size: cover;
 
   animation-name: hero-zoom;
@@ -113,6 +114,79 @@ h2{
 
 }
 
+#club-ethos {
+  height: 600px;
+}
+
+#left-about {
+  padding-top: 30px;
+  width: 33%;
+  float: left;
+  
+}
+
+#right-about {
+  padding-top: 30px;
+  width: 33%;
+  float: right;
+  
+}
+
+  
+
+hr {
+  border-top: 1px solid #777777;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.left-about-heading {
+  float: left;
+  width: 100%;
+  line-height: 20px;
+  clear: both;
+  margin-bottom: 50px;
+}
+
+.right-about-heading {
+  float: right;
+  width: 100%;
+  line-height: 20px;
+  clear: both;
+  margin-bottom: 50px;
+}
+
+.right-about-heading h2 {
+  text-align: right;
+}
+
+.right-about-heading p {
+  text-align: right;
+}
+
+#welcome {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 280%;
+}
+#circle-container {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 1px;
+  border-radius: 50%;
+  margin: 0 auto;
+
+}
+
+#circle-cover-bg {
+  height: 100%;
+  border-radius: 50%;
+}
+
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -133,6 +207,7 @@ h2{
 .intro-main {
   display: flex;
   flex-direction: column;
+  color: #080300;
 }
 
 .intro-area {
@@ -178,141 +253,6 @@ h2{
 .text-centering {
   text-align: center;
   font-weight: 900;
-}
-
-/* ------------- Menu page  ------------- */
-
-.page-nav-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.page-nav-links a:link {
-  text-decoration: none;
-  font-size: 0.7em;
-  color: #231a19 !important;
-  margin: 5px;
-  padding: 5px;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 10px;
-}
-
-.page-nav-links a:hover {
-  background-color: rgba(87, 48, 30, 0.1);
-  color: #231a19;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-.top-link:link {
-  text-decoration: none;
-  margin: 20px auto;
-  margin: 5px;
-}
-
-.top-link:hover {
-  background-color: #552f1e;
-  color: #ece7e1;
-  border: 1px solid transparent;
-  border-radius: 10px;
-}
-
-.card {
-  font-size: 14px;
-  max-width: 100%;
-}
-
-.card-hd {
-  font-family: 'Merriweather', serif;
-  font-weight: 500;
-  padding-top: 1em;
-}
-
-.card-group {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5em;
-  padding: 1.5em 0;
-}
-
-.card-item {
-  display: flex;
-}
-
-.card-img {
-  width: 80px;
-  height: 80px;
-  flex-shrink: 0;
-  object-fit: cover;
-  margin-right: 1.5em;
-}
-
-.product-content {
-  flex-grow: 1;
-}
-
-.product-title {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-}
-
-.product-name {
-  margin-right: 1.5em;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
-
-.product-price {
-  font-size: 0.75em;
-  font-weight: 300;
-}
-
-.product-info {
-  line-height: 1.6;
-  font-weight: 500;
-  font-size: 0.75rem;
-  text-align: justify;
-}
-
-#menu-download-link {
-  text-decoration: none;
-  border: none;
-  max-width: 100%;
-  font-size: 0.7em;
-}
-
-/* found a solution to customize my details-summary elements here: 
-https://stackoverflow.com/questions/10813581/can-i-replace-the-expand-icon-of-the-details-element */
-details>summary {
-  list-style-type: '▶️ Click to open quick menu links';
-}
-
-details[open]>summary {
-  list-style-type: '🔽 Click to close quick menu links';
-  padding-bottom: 0.5rem;
-}
-
-details {
-  padding: 0.5rem;
-}
-
-details[open]>summary {
-  border-bottom: 1px solid transparent;
-}
-
-.details-hr {
-  border: 0;
-  height: 1px;
-  background: rgba(236, 231, 225, 0.5);
-  background-blend-mode: darken;
-  background-image: -webkit-linear-gradient(left, #f7f7f7, #532b1e, #f7f7f7);
-  background-image: -moz-linear-gradient(left, #f7f7f7, #532b1e, #f7f7f7);
-  background-image: -ms-linear-gradient(left, #f7f7f7, #532b1e, #f7f7f7);
-  background-image: -o-linear-gradient(left, #f7f7f7, #532b1e, #f7f7f7);
 }
 
 /* -------------Gallery main page------------------------------------ */
