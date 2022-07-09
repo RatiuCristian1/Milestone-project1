@@ -24,6 +24,7 @@ h2{
   font-size: 280%; 
 }
 
+
 #menu {
   font-size: 110%;
   list-style-type: none;
@@ -53,571 +54,59 @@ h2{
   border-bottom: 1px solid #777777;
 }
 
-#hero-image {
-  height: 750px;
+.content {
+  margin-top: 100px;
   width: 100%;
-  background: url("assets/images/Satu-Mare2-1.jpg")
-  background-size: cover;
-
-  animation-name: hero-zoom;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
-
-#hero-outer {
-  height: 750px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-@keyframes hero-zoom {
- from{
-  transform: scale(1);
-  }
- to {
-  transform: scale(1.2);
-  }
-}
-
-#reason-text{
-  font-size: 175%;
-  padding-top: 10px;
+  height: 1200px;
+  border: 1px solid #c3c3c3;
+  display: flex;
   
 }
 
-#cover-text, #cover-text h2 { 
-  color: #ffffff;
-  display: 
-
-}
-
-#cover-text {
-  font-size: 150%;
-  font-family: Oswald;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-
-    width: 400px;
-    height: 100px;
-    
-  
-  padding-top: 40px;
-  padding-left: 10px;
-
-  background-color: rgba(48, 48, 245, 0.7);
-
-  bottom: 60px;
-  right: 120px;
-
-  position: absolute;  
-
-}
-
-#club-ethos {
-  height: 600px;
-}
-
-#left-about {
-  padding-top: 30px;
-  width: 33%;
-  float: left;
+.box {
+  width: 75%;
+  height: 400px;
+  align-self: center;
   
 }
 
-#right-about {
-  padding-top: 30px;
-  width: 33%;
-  float: right;
-  
+#col {
+  flex-direction: column;
 }
 
-  
 
-hr {
-  border-top: 1px solid #777777;
-  width: 100%;
-  margin: 10px 0;
-}
-
-.left-about-heading {
-  float: left;
-  width: 100%;
-  line-height: 20px;
-  clear: both;
-  margin-bottom: 50px;
-}
-
-.right-about-heading {
-  float: right;
-  width: 100%;
-  line-height: 20px;
-  clear: both;
-  margin-bottom: 50px;
-}
-
-.right-about-heading h2 {
-  text-align: right;
-}
-
-.right-about-heading p {
-  text-align: right;
-}
-
-#welcome {
-  margin: 20px 0;
+.red {
+  padding-top: 1em;
+  background-color: red;
   text-align: center;
-  font-size: 280%;
+  font-size: 25px;
+  color: black;
+  
 }
-#circle-container {
-  width: 200px;
+
+.lightblue {
+  padding-top: 2em;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  
+}
+
+.yellow {
+  padding-top: 2em;
+  background-color: yellow;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  
+}
+
+
+.footer {
+  width: 100%;
   height: 200px;
-  padding: 10px;
-  border-style: solid;
-  border-color: #cccccc;
-  border-width: 1px;
-  border-radius: 50%;
-  margin: 0 auto;
-
+  padding-bottom: 10px;
 }
 
-#circle-cover-bg {
-  height: 100%;
-  border-radius: 50%;
-}
-
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 0 30px;
-  margin: 0 auto;
-  color: #231a19;
-  background-color: rgba(88, 40, 22, 0.02);
-  background-blend-mode: darken;
-}
-
-/* ------------------------------------------------------- */
-/* -------------Landing page SECTION ------------------------------------ */
-.intro-main {
-  display: flex;
-  flex-direction: column;
-  color: #080300;
-}
-
-.intro-area {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-}
-
-.intro-area-img {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  width: 100%;
-  height: 100%;
-}
-
-.intro-area-img img {
-  width: 100%;
-  object-fit: contain;
-  border-radius: 5px;
-  margin-top: 1em;
-}
-
-.landing-p-msg {
-  text-align: justify !important;
-  text-justify: inter-word;
-}
-
-.intro-links:link {
-  text-decoration: none;
-  padding: 0 0.3em;
-}
-
-.intro-links:hover {
-  color: #F5F7BB;
-  background: #552f1e;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  transition: 0.2s ease-out;
-}
-
-.text-centering {
-  text-align: center;
-  font-weight: 900;
-}
-
-/* -------------Gallery main page------------------------------------ */
-.gal-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  gap: 5px;
-}
-
-.gal-wrapper>li {
-  border: 2px solid rgba(0, 0, 0, .3);
-}
-
-.gal-img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  max-width: 300px;
-}
-
-
-/* -------------CONTACT -> Forms page------------------------------------ */
-.forms-section {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  width: 100%;
-  overflow: hidden;
-}
-
-#forms-content {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-fieldset {
-  display: block;
-  border: 1px solid transparent;
-  margin-bottom: 1em;
-}
-
-legend {
-  margin: 0 auto;
-}
-
-select {
-  background-color: rgba(236, 231, 225, 0.5);
-}
-
-select option {
-  background-color: #ece7e1;
-  color: #231a19;
-}
-
-.input-areas {
-  line-height: 1.6em;
-  width: 95%;
-  border: 1px solid transparent;
-}
-
-input[type=text],
-input[type=email],
-input[type=tel],
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #dad5d3;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-#message {
-  min-height: 100px;
-  width: 100%;
-  border: 1px solid #dad5d3;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #552f1e;
-  color: #ece7e1;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #883F22;
-  color: #f5f7bb;
-  transition: 0.3s ease-out;
-}
-
-input[type=reset] {
-  width: 100%;
-  background-color: #552f1e;
-  color: #ece7e1;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=reset]:hover {
-  background-color: #883F22;
-  color: #f5f7bb;
-  transition: 0.3s ease-out;
-}
-
-
-/* -------------FOOTER------------------------------------ */
-footer {
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0;
-  padding-bottom: 1em;
-  font-size: 0.9rem;
-  line-height: 1.2;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  height: auto;
-  width: 100%;
-}
-
-.footer-containt-box {
-  justify-content: space-between;
-  align-content: center;
-  max-width: 1000px;
-  width: 100%;
-}
-
-.foo-border {
-  width: 100%;
-}
-
-.rev-bg {
-  background-color: #552f1e !important;
-  color: #ece7e1 !important;
-}
-
-.foo-hd-text {
-  text-transform: uppercase;
-  margin-top: 1em;
-}
-
-.center-all {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.address-link {
-  text-decoration: none;
-  color: inherit;
-  padding: 15px 15px;
-}
-
-footer>.address-link {
-  padding: 150px 150px;
-}
-
-.address-link:hover {
-  color: #f5f7bb;
-}
-
-.social-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-}
-
-.social-ic {
-  align-items: center;
-  padding: 2vh;
-  font-size: 1.6rem;
-  ;
-}
-
-div.social-ic i:hover {
-  color: #f5f7bb !important;
-  font-size: 2rem;
-  transition: 1s ease-out;
-}
-
-/* while in mobile view the tel link is enabled and proceeds to opening the phone number in caliing screen */
-a[class="calling"] {
-  pointer-events: auto !important;
-  cursor: auto !important;
-}
-
-/* -------------Contact page------------------------------------ */
-label {
-  max-width: 33%;
-}
-
-/* -------------Media Queries------------------------------------------------------------------------ */
-
-@media (min-width: 992px) {
-  .container {
-      max-width: 1000px;
-      width: 100%;
-      min-height: 80vh;
-      padding: 0 100px;
-      margin: 10px auto;
-  }
-
-  .intro-main {
-      display: flex;
-      flex-direction: column;
-  }
-
-  .intro-area {
-      display: flex;
-      flex-direction: column;
-      padding: 1em;
-  }
-
-  .card {
-      font-size: 16px;
-  }
-
-  .card-group {
-      grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card-img {
-      width: 125px;
-      height: 125px;
-  }
-
-  .gal-img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      max-width: 700px;
-  }
-
-  .gal-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-      justify-content: center;
-      margin: 5% 5%;
-      padding: 0;
-      gap: 5px;
-  }
-
-  /* ------FOOTER------ */
-  .footer {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 0;
-      padding-bottom: 0 !important;
-  }
-
-  .footer-containt-box {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-content: center;
-      padding: 0 100px 0 100px;
-  }
-
-  .footer-container {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      width: 100%;
-      height: 100%
-  }
-
-  .foo-border {
-      max-width: 1000px;
-  }
-
-  /* while in desktop view the tel link is disabled */
-  .calling {
-      pointer-events: none;
-      cursor: default;
-  }
-}
-
-
-/* MQ for navigation bar responsivness */
-@media (max-width: 1000px) {
-  nav {
-      padding: 0 40px 0 50px;
-  }
-}
-
-/* MQ for navigation bar responsivness */
-@media (max-width: 920px) {
-  nav .menu-toggle-btn i {
-      display: block;
-  }
-
-  #select:checked~.menu-toggle-btn i:before {
-      content: "\f00d";
-  }
-
-  nav ul {
-      position: fixed;
-      top: 125px;
-      left: -100%;
-      background: #ece7e1;
-      height: 250px;
-      width: 100%;
-      text-align: center;
-      display: block;
-      border-bottom: 1px solid #552f1e;
-      transition: all 0.3s ease;
-  }
-
-  #select:checked~ul {
-      left: 0;
-  }
-
-  nav ul li {
-      width: 100%;
-      margin: 0;
-  }
-
-  nav ul li a {
-      width: 100%;
-      margin-left: -100%;
-      display: block;
-      font-size: 22px;
-      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-
-  #select:checked~ul li a {
-      margin-left: 0px;
-  }
-
-  nav ul li a.active,
-  nav ul li a:hover {
-      color: #ece7e1;
-      background: #552f1e;
-  }
-}
- 
-
-
-
-
-
-
-
+  
